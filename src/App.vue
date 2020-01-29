@@ -3,9 +3,9 @@
     <ResponsiveNavigation
       :nav-links="navLinks"
       :image-path="require('./assets/img/logo.png')"
-      background="#fff"
-      link-color="#777"
-      hoverBackground="#ddd"
+      background="#333"
+      link-color="#DDD"
+      hoverBackground="#444"
     />
     <router-view/>
   </div>
@@ -27,7 +27,7 @@ export default {
       },
       {
         text: 'Resume',
-        path: '/gallery',
+        path: '/resume',
         icon: 'ion-ios-business',
       },
       {

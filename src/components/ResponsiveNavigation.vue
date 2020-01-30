@@ -2,7 +2,7 @@
   <nav>
     <ul :style="{ background: background || '#333' }" ref="nav">
       <figure class="image-logo" @click="toggleNav">
-        <img :src="imagePath" height="40px" width="40px" />
+        <img :src="imagePath" height="60px" width="60px" />
       </figure>
       <li
         v-for="(link, index) in navLinks"
@@ -40,6 +40,8 @@ export default {
 
 <style scoped lang="scss">
   nav {
+    position:fixed;
+    top:0;
     height: 60px;
     width: 100%;
     ul {
@@ -50,10 +52,9 @@ export default {
       margin-block-start: 0;
       margin-block-end: 0;
       padding-inline-start: 0;
-      box-shadow: 2px 2px 2px #CCC;
+      box-shadow: 2px 2px 2px #444;
 
       figure {
-        cursor: pointer;
         margin-right: 10px;
       }
 
@@ -78,6 +79,7 @@ export default {
 
   @media screen and (max-width: 759px) {
     nav {
+      z-index: 10;
       height: 0px;
       ul {
         position: fixed;
@@ -93,9 +95,10 @@ export default {
         }
 
         figure {
-          position: fixed;
-          top: 8px;
-          left: 0px;
+          transform: translate(10px, 0px);
+          cursor: pointer;
+          position: sticky;
+          left: 10px;
         }
 
         li {

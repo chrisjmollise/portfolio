@@ -2,7 +2,7 @@
   <div id="app">
     <ResponsiveNavigation
       :nav-links="navLinks"
-      :image-path="require('./assets/img/logo.png')"
+      :image-path="require('./assets/img/Logo.svg')"
       background="#333"
       link-color="#DDD"
       hoverBackground="#444"
@@ -36,14 +36,14 @@ export default {
         icon: 'ion-ios-business',
       },
       {
-        text: 'About',
-        path: '/about',
-        icon: 'ion-ios-bonfire',
-      },
-      {
         text: 'Contact',
         path: '/contact',
         icon: 'ion-ios-briefcase',
+      },
+      {
+        text: 'About',
+        path: '/about',
+        icon: 'ion-ios-bonfire',
       },
     ],
   }),

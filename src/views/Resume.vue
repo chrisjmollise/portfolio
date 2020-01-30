@@ -13,7 +13,8 @@
             <p class="text-white-75 font-weight-light mb-5"> This page is a work in progress. <br>
               From this page users can access a digital recreation of my resume. <br> A copy of my
               resume as a pdf can be downloaded below.</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://github.com/chrisjmollise">Download Resume</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="./src/assets/pdf/Resume.pdf"
+               download>Download Resume</a>
             <i class="fab fa-github"></i>
           </div>
         </div>

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("../assets/img/bg-masthead.jpg");
+    height: 100vh;
+    background--size: cover;
+    background-position: center;
+}
+body {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    overflow-wrap: normal;
+    word-wrap: normal;
+}
+.hero {
+    position: absolute;
+    width: 100%;
+}
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 275px;
+}
+p{
+    color: darkgrey;
+    text-shadow: white;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+.email{
+    color: lightgrey;
+    text-shadow: white;
+    text-align: center;
+    font-size: 100%;
+    margin-top: 20px;
+}
+.button {
+    margin-top:30px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color
+    0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+.btn:hover {
+    background-color:#444;
+    transition: all 0.4s ease-in;
+}
+.main {
+    margin-top: 60px;
+}
+@media screen and (max-width: 759px) {
+    .main {
+        margin-top: 0px;
+        margin-left: 60px;
+    }
+    .hero{
+        width: 90%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}

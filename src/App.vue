@@ -23,27 +23,27 @@ export default {
       {
         text: 'Home',
         path: '/',
-        icon: 'ion-ios-megaphone',
+        icon: 'ion-ios-home',
       },
       {
         text: 'Resume',
         path: '/resume',
-        icon: 'ion-ios-business',
+        icon: 'ion-ios-copy',
       },
       {
         text: 'Projects',
         path: '/projects',
-        icon: 'ion-ios-business',
+        icon: 'ion-ios-camera',
       },
       {
         text: 'Contact',
         path: '/contact',
-        icon: 'ion-ios-briefcase',
+        icon: 'ion-ios-mail',
       },
       {
         text: 'About',
         path: '/about',
-        icon: 'ion-ios-bonfire',
+        icon: 'ion-ios-help-circle-outline',
       },
     ],
   }),
@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss">
   @import url('https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css');
-
+  html { overflow-y: scroll; }
   figure {
     margin-block-start: 0;
     margin-block-end: 0;

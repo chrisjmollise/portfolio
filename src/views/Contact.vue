@@ -8,7 +8,7 @@
       <div class = "hero">
         <h1>Work In Progress...</h1>
         <p>This page is a work in progress.
-          <br>From this page users will be receive additional contact information.
+          <br>From this page users can receive additional contact information.
           <br> You can contact Christopher Mollise at:
           <br> <br> <a class = "email" href="mailto:chrisjmollise.com?Subject=Website%Inquiry"
                        target="_top"> chrisjmollise@gmail.com</a>

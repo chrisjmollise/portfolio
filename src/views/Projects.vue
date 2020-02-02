@@ -8,7 +8,7 @@
       <div class = "hero">
         <h1>Work In Progress...</h1>
         <p>This page is a work in progress.
-          <br>From this page users will be able a gallery of non-programming projects such as 3D
+          <br>From this page users can see a gallery of non-programming projects such as 3D
           Modeling and Makerspace Projects.
           <br>For programming projects, please visit my Github linked bellow.
           <br><br> </p>

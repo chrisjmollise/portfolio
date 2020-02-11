@@ -1,4 +1,7 @@
-# mywebsite
+# Portfolio Project
+##About
+This project is a professional portfolio website for Christopher Mollise hosted as www.chrisjmollise.com.
+Built using Vue.JS, this project is meant to host a digital recreation of my resume as well as a gallery for physical projects not suiteed for hosting on github. The website is a work in progress and will be developed more in the future. 
 
 ## Project setup
 ```

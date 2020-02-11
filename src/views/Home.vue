@@ -37,6 +37,6 @@ export default {
 <style scoped lang="scss">
   @import "src/assets/css/mycss";
   header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/img/bg-masthead.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../assets/img/Home-Masthead.png");
   }
 </style>

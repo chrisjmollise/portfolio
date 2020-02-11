@@ -27,4 +27,8 @@ export default {
 
 <style scoped lang="scss">
   @import "src/assets/css/mycss";
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
+    url("../assets/img/Projects-Masthead.png");
+  }
 </style>

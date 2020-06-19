@@ -1,84 +1,100 @@
+<script>
+  import NavMenuComponent from './components/NavMenuComponent.vue';
+
+  export default {
+    name: 'App',
+    components: {
+      NavMenuComponent,
+    },
+    data: () => ({
+        prevHeight: 0,
+        navLinks: [
+        {
+            text: 'Home',
+            path: '/',
+            icon: 'house-door-fill',
+        },
+        {
+            text: 'Resume',
+            path: '/resume',
+            icon: 'briefcase-fill',
+        },
+        {
+            text: 'Projects',
+            path: '/projects',
+            icon: 'collection-fill',
+        },
+        {
+            text: 'Contact',
+            path: '/contact',
+            icon: 'chat-square-fill',
+        },
+        {
+            text: 'About',
+            path: '/about',
+            icon: 'info-circle-fill',
+        },],
+      }),
+      methods: {
+          beforeLeave(element) {
+              this.prevHeight = getComputedStyle(element).height;
+          },
+          enter(element) {
+              const { height } = getComputedStyle(element);
+
+              element.style.height = this.prevHeight;
+
+              setTimeout(() => {
+                  element.style.height = height;
+              });
+          },
+          afterEnter(element) {
+              element.style.height = 'auto';
+          },
+      },
+  }
+</script>
+
 <template>
   <div id="app">
-    <ResponsiveNavigation
-      :nav-links="navLinks"
-      :image-path="require('./assets/img/Logo.svg')"
-      background="#333"
-      link-color="#DDD"
-      hoverBackground="#444"
+    <NavMenuComponent
+        :nav-links="navLinks"
     />
-    <router-view/>
+    <main class="App__main">
+        <transition
+            name="fade"
+            mode="out-in"
+            @beforeLeave="beforeLeave"
+            @enter="enter"
+            @afterEnter="afterEnter"
+        >
+            <router-view/>
+        </transition>
+    </main>
   </div>
 </template>
 
-<script>
-import ResponsiveNavigation from './components/ResponsiveNavigation.vue';
+<style lang = sass>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap')
+    html
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("./assets/Home-Masthead.png") no-repeat center center fixed
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+    #app
+        font-family: Avenir, Helvetica, Arial, 'Archivo Black', sans-serif
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        text-align: center
+        color: #2c3e50
+        margin-top: 60px
+    .fade-enter-active, .fade-leave-active
+        transition-duration: 0.3s
+        transition-property: height, opacity
+        transition-timing-function: ease
+        overflow: hidden
+    .fade-enter, .fade-leave-active
+        opacity: 0
 
-export default {
-  components: {
-    ResponsiveNavigation,
-  },
-  data: () => ({
-    navLinks: [
-      {
-        text: 'Home',
-        path: '/',
-        icon: 'ion-ios-home',
-      },
-      {
-        text: 'Resume',
-        path: '/resume',
-        icon: 'ion-ios-copy',
-      },
-      {
-        text: 'Projects',
-        path: '/projects',
-        icon: 'ion-ios-camera',
-      },
-      {
-        text: 'Contact',
-        path: '/contact',
-        icon: 'ion-ios-mail',
-      },
-      {
-        text: 'About',
-        path: '/about',
-        icon: 'ion-ios-help-circle-outline',
-      },
-    ],
-  }),
-};
-</script>
-
-<style lang="scss">
-  @import url('https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css');
-  html { overflow-y: scroll; }
-  figure {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 10px;
-    margin-inline-end: 0;
-  }
-
-  body {
-    margin: 0;
-  }
-
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-  }
-  #nav {
-    padding: 30px;
-    a {
-      font-weight: bold;
-      color: #2c3e50;
-      &.router-link-exact-active {
-        color: #42b983;
-      }
-    }
-  }
 </style>

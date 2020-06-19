@@ -14,7 +14,7 @@ export default new Router({
   {
     path: '/resume',
     name: 'resume',
-    component: () => import ('./views/Resume.vue'),
+    component: () => import ('./views/HelloWorld.vue'),
   },
   {
     path: '/projects',

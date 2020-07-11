@@ -6,40 +6,25 @@
 
 <template>
     <div class="main">
-        <img src='../assets/mastheadImages/About-Masthead.png' class="bg fade-in">
+        <img src='../assets/mastheadImages/Resume-Masthead.png' class="bg fade-in">
         <b-jumbotron class="home-jumbotron">
             <template v-slot:header>
-                <div class="header"> About </div>
+                <div class="header"> Resume </div>
             </template>
 
             <template v-slot:lead>
                 <hr class="my-4">
                 <p class="container-text">
-                    Information about implementation and utilized technologies. For additional information
+                    Christopher's resume can be downloaded below. For additional information
                     <router-link :to="{ path: 'contact' }" class="link">contact</router-link>
                     Christopher.
                 </p>
                 <hr class="my-4">
             </template>
 
-            <div class="description-text">
-                <p class="para-separator">
-                    Website Produced Using HTML/SASS/JS and Vue.JS
-                </p>
-                <p class="para-separator">
-                    Website Layout Utilizes Vue Bootstrap and Bootstrap Styling
-                </p>
-                <p class="para-separator">
-                    Special Thanks to Adam Landis For Additional Help
-                </p>
-                <p class="para-separator">
-                    See The
-                    <a href="https://github.com/chrisjmollise/portfolio" class="link">
-                        Github
-                    </a>
-                    For This Project
-                </p>
-            </div>
+            <a class="description-text link" href="/Resume.pdf"
+                       download> Download Resume
+            </a>
 
         </b-jumbotron>
     </div>
@@ -57,8 +42,7 @@
         min-height: 100%
         margin: auto
         overflow: auto
-        filter: brightness(40%)
-        transform: scaleX(-1)
+        filter: brightness(30%)
     .fade-in
         opacity: 1
         animation-name: fadeInOpacity
@@ -100,7 +84,7 @@
     .para-separator
         margin-top: 5vh
     .email
-        color: lightgrey
+        color: white
         text-shadow: white
         text-align: center
         font-size: 100%

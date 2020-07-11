@@ -112,6 +112,7 @@
     .nav-item
         color: #DDD
         display: inline
+        text-shadow: 1px 1px 3px black
     .nav-separator
         margin-left: 23px
     .side-nav-bar

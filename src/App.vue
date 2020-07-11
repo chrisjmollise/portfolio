@@ -77,7 +77,7 @@
 <style lang = sass>
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap')
     html
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("./assets/Home-Masthead.png") no-repeat center center fixed
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("assets/mastheadImages/Home-Masthead.png") no-repeat center center fixed
         -webkit-background-size: cover
         -moz-background-size: cover
         -o-background-size: cover

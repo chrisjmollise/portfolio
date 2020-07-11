@@ -71,15 +71,18 @@
         text-transform: uppercase
         font-size: 4vw
         font-family: 'PT Mono', monospace
+        text-shadow: 1px 1px 3px black
     .container-text
         font-size: 75%
         font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
         color: #DDD
         padding: 0
         margin: 0
+        text-shadow: 1px 1px 3px black
     .description-text
         font-size: 120%
         color: #DDD
+        text-shadow: 1px 1px 3px black
     .home-btn
         background-color: rgba(0,0,0,0.5)
         border-radius: 0.4rem
@@ -89,11 +92,13 @@
         width: 12vw
         height: 2.5em
         font-size: 100%
+        box-shadow: 2px 2px 5px black
     .home-vert-btn
         width: 90%
         height: 2.5em
         font-size: 2.5vw
         margin-bottom: 1vh
+        box-shadow: 2px 2px 5px black
     .home-btn:hover
         background-color: #444
         transition: all 0.4s ease-in

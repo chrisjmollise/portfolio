@@ -6,7 +6,7 @@
 
 <template>
     <div class="main">
-        <img src='../assets/Contact-Masthead.png' class="bg fade-in">
+        <img src='../assets/mastheadImages/Contact-Masthead.png' class="bg fade-in">
         <b-jumbotron class="home-jumbotron">
             <template v-slot:header>
                 <div class="header"> Contact Me </div>
@@ -34,7 +34,6 @@
                     </a>
                 </p>
             </div>
-
         </b-jumbotron>
     </div>
 </template>
@@ -78,23 +77,26 @@
         text-transform: uppercase
         font-size: 4vw
         font-family: 'PT Mono', monospace
+        text-shadow: 1px 1px 3px black
     .container-text
         font-size: 75%
         font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
         color: #DDD
         padding: 0
         margin: 0
+        text-shadow: 1px 1px 3px black
     .description-text
         font-size: 120%
         color: #DDD
+        text-shadow: 1px 1px 3px black
     .para-separator
         margin-top: 5vh
     .email
         color: lightgrey
-        text-shadow: white
         text-align: center
         font-size: 100%
         margin-top: 20px
+        text-shadow: 1px 1px 3px black
     @media only screen and (max-width: 690px)
         .horizontal-buttons
             display: none

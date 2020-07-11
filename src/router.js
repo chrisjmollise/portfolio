@@ -10,11 +10,12 @@ export default new Router({
     path: '/',
     name: 'home',
     component: () => import ('./views/Home.vue'),
+    meta: { title: 'Skills - MyApp' }
   },
   {
     path: '/resume',
     name: 'resume',
-    component: () => import ('./views/HelloWorld.vue'),
+    component: () => import ('./views/Resume.vue'),
   },
   {
     path: '/projects',

@@ -143,20 +143,20 @@
                         body-text-variant="light"
                 >
                     <youtube
-                            video-id="ZLTuLDBbz"
+                            video-id="ZLTuLDBbz-E"
                             player-width="100%"
                     />
                     <hr class="my-4">
                     <p class="modal-text">
                         Unreal Project created for UNR's Mining Automation and Robotics Lab.
                         The main purpose of this project is to create segmentation masks
-                        for use in training a computer vision program to find the size of
-                        rock fragments for use in mining equipment. This program was created
+                        for use in training a computer vision program. This program will find the size of
+                        rock fragments for use in mining equipment. The project was created
                         with a series of technologies including an Artec Spider 3D scanner to
                         create realistic rock models and textures, Blender to create morph
                         targets to create varying data, and Unreal Engine to simulate the
                         different piles and create the masks. This project was an attempt
-                        to understand the possible methods of creating such data such that
+                        to understand the possible methods of creating data such that
                         more complicated iterations could be created for research.
                     </p>
                 </b-modal>
@@ -337,10 +337,10 @@
                         header-text-variant="light"
                         body-text-variant="light"
                 >
-<!--                    <youtube-->
-<!--                            video-id="Ab37X5ZLoSc"-->
-<!--                            player-width="100%"-->
-<!--                    />-->
+                    <youtube
+                            video-id="19WcSKey7hw"
+                            player-width="100%"
+                    />
                     <hr class="my-4">
                     <p class="modal-text">
                         Unity project created for UNR's CS 381 Game Engine Architecture.
@@ -400,7 +400,7 @@
                         This projects goal was to understand how Unity can be used for
                         creating VR applications as well as understanding VR's use in
                         creating assistive technology. This program makes use of images
-                        made using a 3D camera and using them to create a tour of UNR's
+                        made using a 3D camera and uses them to create a tour of UNR's
                         campus. This project is a proof of concept that could be expanded
                         into a full campus tour. The main target of this project was for
                         students whose mobility may not allow a comprehensive tour of a
